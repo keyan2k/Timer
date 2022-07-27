@@ -44,3 +44,15 @@ function f (){
 };
 
 var v = setInterval(f,3000);
+
+
+var first = setTimeout(function A() {
+    return console.log("Hello World!");
+}, 3000);
+  
+
+var second = setTimeout(function B() {
+    return console.log("Hello Geeks!");
+}, 3000);
+  
+clearTimeout(first);
