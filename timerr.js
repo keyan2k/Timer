@@ -56,3 +56,16 @@ var second = setTimeout(function B() {
 }, 3000);
   
 clearTimeout(first);
+
+
+setImmediate(function a() {
+    setImmediate(function b() {
+        console.log(10);
+
+        setImmediate(function functionc() {
+            console.log(20);
+        });
+    });
+    
+});
+
